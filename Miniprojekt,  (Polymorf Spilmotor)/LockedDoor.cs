@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Miniprojekt____Polymorf_Spilmotor_
-{
+
     public class LockedDoor
     {
-        private bool isUnlocked = false;
+        private bool isUnlocked=false;
         public void Interact(Player player)
         {
             if (isUnlocked)
@@ -26,4 +25,4 @@ namespace Miniprojekt____Polymorf_Spilmotor_
             }
         }
     }
-}
+
