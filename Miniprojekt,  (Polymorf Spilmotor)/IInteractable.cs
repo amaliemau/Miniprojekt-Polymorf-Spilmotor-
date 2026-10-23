@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Miniprojekt____Polymorf_Spilmotor_
-{
     public interface IInteractable
     {
         public string Description { get; }
@@ -12,6 +10,6 @@ namespace Miniprojekt____Polymorf_Spilmotor_
         public void Interact(Player player);
     }
 
-}
+
 
 

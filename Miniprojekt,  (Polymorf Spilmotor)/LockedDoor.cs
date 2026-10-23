@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Miniprojekt____Polymorf_Spilmotor_
-{
+
     public class LockedDoor
     {
         private bool isUnlocked = false;
@@ -26,4 +25,4 @@ namespace Miniprojekt____Polymorf_Spilmotor_
             }
         }
     }
-}
+
