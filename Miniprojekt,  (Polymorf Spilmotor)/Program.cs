@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-
+﻿
 using System;
 using System.Collections.Generic;
 
@@ -24,6 +22,9 @@ class Program
         };
 
         player.ShowStatus();
+
+        Console.WriteLine("==== Welcome to the Dungeon Crawler Game! ====");
+        
 
         List<DungeonRoom> rooms = new List<DungeonRoom>
         {
@@ -58,6 +59,18 @@ class Program
             if (choice == "1")
             {
                 rooms[currentRoom].ExploreRoom(player);
+                Console.WriteLine(@"          /        \");
+                Console.WriteLine(@"         /  /\  /\  \");
+                Console.WriteLine(@"        /  /  \/  \  \");
+                Console.WriteLine(@"        |   (o)(o)   |");
+                Console.WriteLine(@"        |     /\     |");
+                Console.WriteLine(@"        |   \____/   |");
+                Console.WriteLine(@"         \  /||||\  /");
+                Console.WriteLine(@"          \/ |||| \/");
+                Console.WriteLine(@"           /| || |\");
+                Console.WriteLine(@"          /_|_||_|_\");
+                Console.WriteLine();
+                Console.WriteLine("       !!! A Monster APPEARS !!!");
             }
             else if (choice == "2")
             {
