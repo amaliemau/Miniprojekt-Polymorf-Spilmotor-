@@ -33,11 +33,11 @@ public class DungeonRoom
 
         if (ObjectsInRoom.Count == 0)
         {
-            Console.WriteLine("Rummet indeholder ingen objekter.");
+            Console.WriteLine("The room holds no objects.");
             return;
         }
 
-        Console.Write("\nVælg et objekt (1-" +
+        Console.Write("\nChoose an object (1-" +
                 ObjectsInRoom.Count + "): ");
 
         int choice;
@@ -57,12 +57,12 @@ public class DungeonRoom
             }
             else
             {
-                Console.WriteLine("Ugyldigt valg!");
+                Console.WriteLine("Invalid choice!");
             }
         }
         else
         {
-            Console.WriteLine("Du skal indtaste et tal!");
+            Console.WriteLine("You must enter a number!");
         }
     }
 }
