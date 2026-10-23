@@ -10,18 +10,18 @@ using System.Text;
         {
             if (isUnlocked)
             {
-                Console.WriteLine("Døren er allerede låst op.");
+                Console.WriteLine("Door is already open");
                 return;
             }
 
             if (player.HasKey)
             {
                 isUnlocked = true;
-                Console.WriteLine("Du bruger nøglen og låser døren op.");
+                Console.WriteLine("You have the key and open the door");
             }
             else
             {
-                Console.WriteLine("Døren er solidt låst. Du mangler en nøgle!");
+                Console.WriteLine("The door is closed. You haven´t the key");
             }
         }
     }
