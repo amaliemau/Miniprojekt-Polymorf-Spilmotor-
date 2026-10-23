@@ -32,10 +32,10 @@ using System.Text;
     public void ShowStatus()
     {
         Console.WriteLine("======= Player Status =======");
-        Console.WriteLine($"Navn:    {Name}");
-        Console.WriteLine($"Liv:     {Health}/100");
-        Console.WriteLine($"Guld:    {Gold}");
-        Console.WriteLine($"Nøgle:   {(HasKey ? "Ja" : "Nej")}");
+        Console.WriteLine($"Name:    {Name}");
+        Console.WriteLine($"Health:     {Health}/100");
+        Console.WriteLine($"Gold:    {Gold}");
+        Console.WriteLine($"Key:   {(HasKey ? "Ja" : "Nej")}");
     }
 }
 
