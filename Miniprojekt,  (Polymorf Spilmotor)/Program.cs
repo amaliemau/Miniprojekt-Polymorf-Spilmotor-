@@ -39,7 +39,7 @@ class Program
         rooms[1].AddObject(new Chest(Rarity.Uncommon));
         rooms[1].AddObject(new Goblin());
 
-        rooms[2].AddObject(new Goblin());
+        rooms[2].AddObject(new Dragon());
         rooms[2].AddObject(new Chest(Rarity.Rare));
 
         int currentRoom = 0;
