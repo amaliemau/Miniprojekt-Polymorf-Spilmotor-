@@ -42,17 +42,17 @@ public class DungeonRoom
 
         int choice;
 
-        // Kontrollér, at input er et gyldigt tal
+     
         if (int.TryParse(Console.ReadLine(), out choice))
         {
-            // Kontrollér, at valget er inden for listen
+            
             if (choice >= 1 && choice <= ObjectsInRoom.Count)
             {
-                // Hent det valgte objekt
+        
                 IInteractable selectedObject =
                     ObjectsInRoom[choice - 1];
 
-                // Interagér med objektet
+            
                 selectedObject.Interact(player);
             }
             else

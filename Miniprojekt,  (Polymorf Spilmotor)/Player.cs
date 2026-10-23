@@ -21,13 +21,13 @@ using System.Text;
         if (amount <= 0) return;
 
         Health = Math.Max(0, Health - amount);
-        Console.WriteLine($"{Name} mister {amount} liv!");
+        Console.WriteLine($"{Name} looses {amount} health!");
     }
     public void AddGold(int amount)
     {
         if (amount <= 0) return;
         Gold += amount;
-        Console.WriteLine($"{Name} har fået {amount} guld!");
+        Console.WriteLine($"{Name} has gained {amount} gold!");
     }
     public void ShowStatus()
     {

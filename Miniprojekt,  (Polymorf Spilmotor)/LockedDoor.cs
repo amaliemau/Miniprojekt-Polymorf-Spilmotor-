@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 
 
-    public class LockedDoor
-    {
+    public class LockedDoor : IInteractable
+{
+    public string Description => "A locked door. You need a key to open it.";
+    
         private bool isUnlocked=false;
         public void Interact(Player player)
         {

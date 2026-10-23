@@ -1,8 +1,6 @@
 ﻿public class Chest : IInteractable
 {
 
-    public int ChestId { get; set; }
-
     public Rarity ChestRarity { get; set; }
 
     public bool IsOpened { get; set; }
@@ -11,9 +9,9 @@
 
 
 
-    public Chest(int chestId, Rarity chestRarity)
+    public Chest(Rarity chestRarity)
     {
-        ChestId = chestId;
+
         ChestRarity = chestRarity;
         IsOpened = false;
     }
@@ -47,8 +45,15 @@
       
 
     }
-}
 
+    public string Description
+    {
+        get
+        {
+            return $"A {ChestRarity} chest";
+        }
+    }
+}
 
 public enum Rarity
 {
