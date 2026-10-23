@@ -42,6 +42,19 @@ public class Monster : IInteractable
 
         Console.WriteLine("The Monster attacks!");
         player.TakeDamage(attackDamage);
+
+        Console.WriteLine(@"          /        \");
+        Console.WriteLine(@"         /  /\  /\  \");
+        Console.WriteLine(@"        /  /  \/  \  \");
+        Console.WriteLine(@"        |   (o)(o)   |");
+        Console.WriteLine(@"        |     /\     |");
+        Console.WriteLine(@"        |   \____/   |");
+        Console.WriteLine(@"         \  /||||\  /");
+        Console.WriteLine(@"          \/ |||| \/");
+        Console.WriteLine(@"           /| || |\");
+        Console.WriteLine(@"          /_|_||_|_\");
+        Console.WriteLine();
+        Console.WriteLine("       !!! A Monster APPEARS !!!");
     }
 }
 public class Goblin : Monster
