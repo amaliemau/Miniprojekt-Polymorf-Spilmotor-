@@ -23,6 +23,11 @@ using System.Text;
         Health = Math.Max(0, Health - amount);
         Console.WriteLine($"{Name} looses {amount} health!");
     }
+    public void AddGold(int amount)
+    {
+        if (amount <= 0) return;
+        Gold += amount;
+    }
     public void ShowStatus()
     {
         Console.WriteLine("======= Player Status =======");
